@@ -14,7 +14,7 @@
       <img
         class="rounded"
         width="100"
-        src="~/assets/images/pp.webp"
+        src="/assets/images/pp.webp"
         alt="Photo du visage de Yaakov Ferechtehfar"
       />
     </CardTemplate>
