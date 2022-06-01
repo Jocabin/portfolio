@@ -5,9 +5,10 @@
       :title="'Voir le site de ' + props.stackName"
       :href="props.stackLink"
     >
+      <!-- Probleme chemin relatif: CV et images -->
       <img
         loading="lazy"
-        :src="require(`~/assets/images/${props.stackName}.svg`)"
+        :src="'_nuxt/assets/images/' + props.stackName + '.svg'"
         :alt="'Logo de ' + props.stackName"
       />
     </a>
