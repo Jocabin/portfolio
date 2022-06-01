@@ -14,7 +14,7 @@
       <img
         class="rounded"
         width="100"
-        src="./assets/images/pp.jpg"
+        src="~/assets/images/pp.jpg"
         loading="lazy"
         alt="Photo du visage de Yaakov Ferechtehfar"
       />
@@ -28,17 +28,17 @@
       <ul class="grid-stacks">
         <li>
           <a target="_blank" title="Voir le site" href="https://vuejs.org/">
-            <img src="/assets/images/vue.svg" alt="Logo de Vue3" />
+            <img src="~/assets/images/vue.svg" alt="Logo de Vue3" />
           </a>
         </li>
         <li>
           <a target="_blank" title="Voir le site" href="http://v3.nuxtjs.org/">
-            <img src="/assets/images/nuxt.svg" alt="Logo de Nuxt3" />
+            <img src="~/assets/images/nuxt.svg" alt="Logo de Nuxt3" />
           </a>
         </li>
         <li>
           <a target="_blank" title="Voir le site" href="https://sass-lang.com/">
-            <img src="/assets/images/sass.svg" alt="Logo de Sass" />
+            <img src="~/assets/images/sass.svg" alt="Logo de Sass" />
           </a>
         </li>
         <li>
@@ -47,12 +47,12 @@
             title="Voir le site"
             href="https://www.netlify.com/"
           >
-            <img src="/assets/images/netlify.svg" alt="Logo de Netlify" />
+            <img src="~/assets/images/netlify.svg" alt="Logo de Netlify" />
           </a>
         </li>
         <li>
           <a target="_blank" title="Voir le site" href="https://nodejs.org/en/">
-            <img src="/assets/images/nodejs.svg" alt="Logo de NodeJS" />
+            <img src="~/assets/images/nodejs.svg" alt="Logo de NodeJS" />
           </a>
         </li>
         <li>
@@ -61,7 +61,7 @@
             title="Voir le site"
             href="https://www.rust-lang.org/fr/"
           >
-            <img src="/assets/images/rust.svg" alt="Logo de Rust" />
+            <img src="~/assets/images/rust.svg" alt="Logo de Rust" />
           </a>
         </li>
       </ul>
@@ -73,12 +73,12 @@
             title="Voir le site"
             href="https://code.visualstudio.com/"
           >
-            <img src="/assets/images/vscode.svg" alt="Logo de VSCode" />
+            <img src="~/assets/images/vscode.svg" alt="Logo de VSCode" />
           </a>
         </li>
         <li>
           <a target="_blank" title="Voir le site" href="https://www.figma.com/">
-            <img src="/assets/images/figma.svg" alt="Logo de Figma" />
+            <img src="~/assets/images/figma.svg" alt="Logo de Figma" />
           </a>
         </li>
         <li>
@@ -87,7 +87,7 @@
             title="Voir le site"
             href="https://www.microsoft.com/fr-fr/windows"
           >
-            <img src="/assets/images/windows.svg" alt="Logo de Windows" />
+            <img src="~/assets/images/windows.svg" alt="Logo de Windows" />
           </a>
         </li>
       </ul>
