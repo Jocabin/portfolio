@@ -32,6 +32,11 @@
 <script setup>
 // TODO: remplacer par une firebase couplé a strapi
 // TODO: pouvoir parser des liens dans le texte
+
+useHead({
+  title: "Projets",
+});
+
 const projectList = ref([
   {
     title: "Agenda Digital",

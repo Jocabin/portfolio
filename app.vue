@@ -6,6 +6,10 @@
 
 <script setup>
 const route = useRoute();
+
+useHead({
+  titleTemplate: "Yaakov Ferechtehfar - %s",
+});
 </script>
 
 <style lang="scss">

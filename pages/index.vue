@@ -62,6 +62,10 @@
 </template>
 <!-- TODO: favicon -->
 <script setup>
+useHead({
+  title: "Accueil",
+});
+
 onMounted(() => {
   const contactButton = document.getElementById("contactButton");
   const contactSection = document.getElementById("contactSection");
