@@ -60,7 +60,7 @@
 
       <SecondaryButton
         :external="true"
-        href="/assets/CV.pdf"
+        href="~/assets/CV.pdf"
         download="Yaakov_Ferechtehfar_CV.pdf"
         title="Télécharger mon CV"
         >Télécharger mon CV</SecondaryButton
