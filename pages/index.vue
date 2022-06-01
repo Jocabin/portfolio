@@ -60,7 +60,7 @@
     </CardTemplate>
   </div>
 </template>
-
+<!-- TODO: favicon -->
 <script setup>
 onMounted(() => {
   const contactButton = document.getElementById("contactButton");

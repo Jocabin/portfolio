@@ -14,7 +14,7 @@
       <img
         class="rounded"
         width="100"
-        src="/assets/images/pp.jpg"
+        src="./assets/images/pp.jpg"
         loading="lazy"
         alt="Photo du visage de Yaakov Ferechtehfar"
       />
