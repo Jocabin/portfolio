@@ -7,7 +7,7 @@
     >
       <img
         loading="lazy"
-        :src="'_nuxt/assets/images/' + props.stackName + '.svg'"
+        :src="'~/assets/images/' + props.stackName + '.svg'"
         :alt="'Logo de ' + props.stackName"
       />
     </a>
