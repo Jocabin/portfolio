@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="/" class="goback-link">
+  <NuxtLink title="Retourner à la page d'accueil" to="/" class="goback-link">
     <ArrowIcon />
     <span>Retour à l'accueil</span>
   </NuxtLink>

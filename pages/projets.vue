@@ -20,7 +20,7 @@
             v-if="project.codeLink != ''"
             :external="true"
             :href="project.codeLink"
-            :title="'Voir le code du projet ' + project"
+            :title="'Voir le code du projet ' + project.title"
             >Voir le code</SecondaryButton
           >
         </CardRow>

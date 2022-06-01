@@ -10,22 +10,31 @@
           Je suis un&nbsp;<strong class="gras"
             >développeur <span class="gras" lang="en">Front-End</span></strong
           >
-          qui&nbsp;adore la&nbsp;qualité et&nbsp;la&nbsp;performance.
+          qui&nbsp;adore la&nbsp;qualité et&nbsp;l'optimisation.
         </p>
       </CardHeader>
       <CardNav>
         <CardRow>
-          <PrimaryButton to="/projets" :external="false"
+          <PrimaryButton
+            title="Aller voir mes projets en développement web"
+            to="/projets"
+            :external="false"
             >Mes projets</PrimaryButton
           ></CardRow
         >
         <CardRow>
-          <PrimaryButton to="/a-propos" :external="false"
+          <PrimaryButton
+            title="Plus d'informations sur moi"
+            to="/a-propos"
+            :external="false"
             >À propos de moi</PrimaryButton
           >
         </CardRow>
         <CardRow>
-          <PrimaryButton id="contactButton" :external="false"
+          <PrimaryButton
+            title="Contactez-moi"
+            @click="scrollToContact"
+            :external="false"
             >Me contacter</PrimaryButton
           ></CardRow
         >
@@ -43,7 +52,6 @@
         </p>
       </CardHeader>
 
-      <!-- TODO: Changer l'icone des mails pour qu'elle match en hauteur -->
       <ul class="social-medias">
         <SocialMediaIcon social-media="mail" />
         <SocialMediaIcon social-media="github" />
@@ -60,22 +68,14 @@
     </CardTemplate>
   </div>
 </template>
-<!-- TODO: favicon -->
 <script setup>
 useHead({
   title: "Accueil",
 });
 
-onMounted(() => {
-  const contactButton = document.getElementById("contactButton");
-  const contactSection = document.getElementById("contactSection");
-
-  if (contactButton && contactSection) {
-    contactButton.addEventListener("click", () => {
-      contactSection.scrollIntoView();
-    });
-  }
-});
+function scrollToContact() {
+  document.getElementById("contactSection").scrollIntoView();
+}
 </script>
 
 <style lang="scss">

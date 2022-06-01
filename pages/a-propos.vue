@@ -6,16 +6,15 @@
         <p class="texte">
           Je suis Yaakov Ferechtehfar, en&nbsp;2e année de&nbsp;bachelor chef
           de&nbsp;projet digital à&nbsp;l’école
-          <Link :external="true" href="https://www.ecv.fr/">ECV Digital</Link>,
-          et je&nbsp;compte m’orienter vers un&nbsp;master développement web.
+          <Link :external="true" href="//www.ecv.fr/">ECV Digital</Link>, et
+          je&nbsp;compte m’orienter vers un&nbsp;master développement web.
         </p>
       </CardHeader>
 
       <img
         class="rounded"
         width="100"
-        src="~/assets/images/pp.jpg"
-        loading="lazy"
+        src="~/assets/images/pp.webp"
         alt="Photo du visage de Yaakov Ferechtehfar"
       />
     </CardTemplate>
@@ -26,70 +25,21 @@
       </CardHeader>
       <!-- Mettre att title pour tous les liens -->
       <ul class="grid-stacks">
-        <li>
-          <a target="_blank" title="Voir le site" href="https://vuejs.org/">
-            <img src="~/assets/images/vue.svg" alt="Logo de Vue3" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" title="Voir le site" href="http://v3.nuxtjs.org/">
-            <img src="~/assets/images/nuxt.svg" alt="Logo de Nuxt3" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" title="Voir le site" href="https://sass-lang.com/">
-            <img src="~/assets/images/sass.svg" alt="Logo de Sass" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            title="Voir le site"
-            href="https://www.netlify.com/"
-          >
-            <img src="~/assets/images/netlify.svg" alt="Logo de Netlify" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" title="Voir le site" href="https://nodejs.org/en/">
-            <img src="~/assets/images/nodejs.svg" alt="Logo de NodeJS" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            title="Voir le site"
-            href="https://www.rust-lang.org/fr/"
-          >
-            <img src="~/assets/images/rust.svg" alt="Logo de Rust" />
-          </a>
-        </li>
+        <StackIcon stack-link="//vuejs.org/" stack-name="vue" />
+        <StackIcon stack-link="//v3.nuxtjs.org/" stack-name="nuxt" />
+        <StackIcon stack-link="//sass-lang.com/" stack-name="sass" />
+        <StackIcon stack-link="//www.netlify.com/" stack-name="netlify" />
+        <StackIcon stack-link="//nodejs.org/en/" stack-name="nodejs" />
+        <StackIcon stack-link="//www.rust-lang.org/fr/" stack-name="rust" />
       </ul>
       <HSeparator />
       <ul class="line-tech">
-        <li>
-          <a
-            target="_blank"
-            title="Voir le site"
-            href="https://code.visualstudio.com/"
-          >
-            <img src="~/assets/images/vscode.svg" alt="Logo de VSCode" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" title="Voir le site" href="https://www.figma.com/">
-            <img src="~/assets/images/figma.svg" alt="Logo de Figma" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            title="Voir le site"
-            href="https://www.microsoft.com/fr-fr/windows"
-          >
-            <img src="~/assets/images/windows.svg" alt="Logo de Windows" />
-          </a>
-        </li>
+        <StackIcon stack-link="//code.visualstudio.com/" stack-name="vscode" />
+        <StackIcon stack-link="//www.figma.com/" stack-name="figma" />
+        <StackIcon
+          stack-link="//www.microsoft.com/fr-fr/windows/"
+          stack-name="windows"
+        />
       </ul>
     </CardTemplate>
     <!-- TODO: Ajouter mes passions, perfs/access -->
@@ -126,9 +76,15 @@ useHead({
 
 .line-tech {
   width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 </style>
