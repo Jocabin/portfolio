@@ -1,0 +1,63 @@
+@import "/assets/css/variables";
+
+* {
+  box-sizing: border-box;
+  font-family: $text-font, sans-serif;
+}
+
+:root {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $white;
+  background: $black;
+}
+
+.h1 {
+  color: $white;
+  font-family: $title-font;
+  font-size: $title-size;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  font-family: font_bold;
+}
+
+.texte {
+  font-size: $text-size;
+  line-height: 130%;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.gras {
+  font-family: $btn-font;
+  color: $accent;
+}
+
+.hidden {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}

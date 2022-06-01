@@ -1,0 +1,33 @@
+// Colors
+$white: hsl(223, 30%, 95%);
+$black: hsl(212, 28%, 13%);
+$gray: hsl(213, 28%, 19%);
+$accent: hsl(35, 83%, 58%);
+
+// Fonts
+$text-font: font_regular, sans-serif;
+$text-size: 1rem;
+
+$title-font: font_bold, sans-serif;
+$title-size: 1.5rem; /* clamp(2rem, 10vw, 3rem) */
+
+$btn-font: font_bold, sans-serif;
+$btn-size: 1.13rem;
+
+// Border
+$border: 0.25rem solid $white;
+
+@font-face {
+  font-family: font_regular;
+  src: url("../fonts/font_regular.otf");
+}
+@font-face {
+  font-family: font_light;
+  src: url("../fonts/font_light.otf");
+}
+@font-face {
+  font-family: font_bold;
+  src: url("../fonts/font_bold.otf");
+}
+
+// Shadows
