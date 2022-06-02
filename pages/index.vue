@@ -60,7 +60,7 @@
 
       <SecondaryButton
         :external="true"
-        :href="cvURL"
+        href="~/assets/CV.pdf"
         download="Yaakov_Ferechtehfar_CV.pdf"
         title="Télécharger mon CV"
         >Télécharger mon CV</SecondaryButton
@@ -72,8 +72,6 @@
 useHead({
   title: "Accueil",
 });
-
-const cvURL = ref("_nuxt/CV.pdf");
 
 function scrollToContact() {
   document.getElementById("contactSection").scrollIntoView();
