@@ -40,10 +40,12 @@ const props = defineProps({
   cursor: pointer;
   transition: all 250ms ease-in-out;
 
-  &:hover,
-  &:focus {
-    background-color: $white;
-    color: $black;
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $black;
+    }
   }
 }
 </style>

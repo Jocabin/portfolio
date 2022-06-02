@@ -25,9 +25,11 @@
     font-family: $btn-font;
   }
 
-  &:hover,
-  &:focus {
-    background-color: $gray;
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
+      background-color: $gray;
+    }
   }
 }
 </style>

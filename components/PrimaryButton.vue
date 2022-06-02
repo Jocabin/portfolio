@@ -47,10 +47,12 @@ const props = defineProps({
     transition: transform 250ms ease-in-out;
   }
 
-  &:hover,
-  &:focus {
-    span {
-      transform: translate(0.7rem, -0.7rem);
+  @media (hover: hover) {
+    &:hover,
+    &:focus {
+      span {
+        transform: translate(0.7rem, -0.7rem);
+      }
     }
   }
 }
