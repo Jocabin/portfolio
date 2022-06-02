@@ -24,9 +24,10 @@ const props = defineProps({
   },
 });
 
-const imageURL = computed(() => {
-  return `~/assets/images/${props.stackName}.svg`;
-});
+const imageURL = new URL(
+  `../assets/images/${props.stackName}.svg`,
+  import.meta.url
+).href;
 </script>
 
 <style lang="scss" scoped>

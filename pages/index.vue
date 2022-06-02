@@ -60,7 +60,7 @@
 
       <SecondaryButton
         :external="true"
-        href="~/assets/CV.pdf"
+        :href="cvURL"
         download="Yaakov_Ferechtehfar_CV.pdf"
         title="Télécharger mon CV"
         >Télécharger mon CV</SecondaryButton
@@ -72,6 +72,8 @@
 useHead({
   title: "Accueil",
 });
+
+const cvURL = new URL("../assets/CV.pdf", import.meta.url).href;
 
 function scrollToContact() {
   document.getElementById("contactSection").scrollIntoView();
