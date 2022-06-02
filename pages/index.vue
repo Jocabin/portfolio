@@ -73,7 +73,7 @@ useHead({
   title: "Accueil",
 });
 
-const cvURL = new URL("../assets/CV.pdf", import.meta.url).href;
+const cvURL = ref("_nuxt/assets/CV.pdf");
 
 function scrollToContact() {
   document.getElementById("contactSection").scrollIntoView();
