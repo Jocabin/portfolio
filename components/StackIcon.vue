@@ -25,7 +25,7 @@ const props = defineProps({
 });
 
 const imageURL = computed(() => {
-  return `_nuxt/assets/images/${props.stackName}.svg`;
+  return `~/assets/images/${props.stackName}.svg`;
 });
 </script>
 
