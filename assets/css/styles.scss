@@ -53,6 +53,11 @@ strong {
   color: $accent;
 }
 
+.light {
+  font-family: font_regular;
+  font-weight: 400;
+}
+
 .hidden {
   position: absolute;
   left: -999999px;

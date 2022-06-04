@@ -9,7 +9,8 @@
         <CardRow>
           <PrimaryButton
             v-if="project.demoLink != ''"
-            :external="true"
+            external
+            target="_blank"
             :href="project.demoLink"
             :title="'Voir le projet ' + project.title"
             >Voir le projet</PrimaryButton
@@ -18,7 +19,8 @@
         <CardRow>
           <SecondaryButton
             v-if="project.codeLink != ''"
-            :external="true"
+            external
+            target="_blank"
             :href="project.codeLink"
             :title="'Voir le code du projet ' + project.title"
             >Voir le code</SecondaryButton
@@ -30,9 +32,6 @@
 </template>
 
 <script setup>
-// TODO: remplacer par une firebase couplé a strapi
-// TODO: pouvoir parser des liens dans le texte
-
 useHead({
   title: "Projets",
 });

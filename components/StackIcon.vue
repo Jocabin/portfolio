@@ -5,7 +5,6 @@
       :title="'Voir le site de ' + props.stackName"
       :href="props.stackLink"
     >
-      <!--TODO: Aller au top de la page on mounted -->
       <img loading="lazy" :src="imageURL" :alt="'Logo de ' + props.stackName" />
     </a>
   </li>

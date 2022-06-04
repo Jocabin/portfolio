@@ -10,7 +10,8 @@
           Je suis un&nbsp;<strong class="gras"
             >développeur <span class="gras" lang="en">Front-End</span></strong
           >
-          qui&nbsp;adore la&nbsp;qualité et&nbsp;l'optimisation.
+          axé&nbsp;vers la&nbsp;<strong class="light">qualité</strong>
+          et&nbsp;centré <strong class="light">utilisateur</strong>.
         </p>
       </CardHeader>
       <CardNav>
@@ -18,23 +19,16 @@
           <PrimaryButton
             title="Aller voir mes projets en développement web"
             to="/projets"
-            :external="false"
             >Mes projets</PrimaryButton
           ></CardRow
         >
         <CardRow>
-          <PrimaryButton
-            title="Plus d'informations sur moi"
-            to="/a-propos"
-            :external="false"
+          <PrimaryButton title="Plus d'informations sur moi" to="/a-propos"
             >À propos de moi</PrimaryButton
           >
         </CardRow>
         <CardRow>
-          <PrimaryButton
-            title="Contactez-moi"
-            @click="scrollToContact"
-            :external="false"
+          <PrimaryButton title="Contactez-moi" @click="scrollToContact"
             >Me contacter</PrimaryButton
           ></CardRow
         >
@@ -59,7 +53,7 @@
       </ul>
 
       <SecondaryButton
-        :external="true"
+        external
         href="/CV.pdf"
         download="Yaakov_Ferechtehfar_CV.pdf"
         title="Télécharger mon CV"
@@ -74,7 +68,7 @@ useHead({
 });
 
 function scrollToContact() {
-  document.getElementById("contactSection").scrollIntoView();
+  document.querySelector("#contactSection").scrollIntoView();
 }
 </script>
 

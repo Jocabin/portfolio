@@ -4,10 +4,11 @@
       <CardHeader>
         <h2 class="h1">👨&nbsp;Qui suis-je&nbsp;?</h2>
         <p class="texte">
-          Je suis Yaakov Ferechtehfar, en&nbsp;2e année de&nbsp;bachelor chef
-          de&nbsp;projet digital à&nbsp;l’école
-          <Link :external="true" href="//www.ecv.fr/">ECV Digital</Link>, et
-          je&nbsp;compte m’orienter vers un&nbsp;master développement web.
+          Je suis <strong class="light">Yaakov Ferechtehfar</strong>, en&nbsp;2e
+          année de&nbsp;bachelor chef de&nbsp;projet digital à&nbsp;l’école
+          <Link external target="_blank" href="//www.ecv.fr/">ECV Digital</Link
+          >, et je&nbsp;compte m’orienter vers un&nbsp;master développement
+          <abbr lang="en" title="world wide web">web</abbr>.
         </p>
       </CardHeader>
 
@@ -42,7 +43,18 @@
         />
       </ul>
     </CardTemplate>
-    <!-- TODO: Ajouter mes passions, perfs/access -->
+
+    <CardTemplate>
+      <CardHeader>
+        <h2 class="h1">⚽️&nbsp;Mes&nbsp;passions</h2>
+      </CardHeader>
+      <ul>
+        <li>🎸 Musique (Guitare électrique)</li>
+        <li>📖 Lecture</li>
+        <li>💻 Monde de la tech</li>
+        <li>🧗 Escalade</li>
+      </ul>
+    </CardTemplate>
   </div>
 </template>
 

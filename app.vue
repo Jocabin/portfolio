@@ -1,11 +1,7 @@
 <template>
   <GoBackLink v-if="route.name != 'index'" />
   <NuxtPage />
-  <Link
-    title="Voir le plan du site"
-    class="sticked-bottom"
-    to="/plan"
-    :external="false"
+  <Link title="Voir le plan du site" class="sticked-bottom" to="/plan"
     >Plan du site</Link
   >
 </template>
@@ -15,6 +11,10 @@ const route = useRoute();
 
 useHead({
   titleTemplate: "Yaakov Ferechtehfar - %s",
+  htmlAttrs: {
+    lang: "fr",
+  },
+  charset: "utf-8",
   meta: [
     {
       name: "description",
@@ -110,3 +110,8 @@ useHead({
   min-height: 100%;
 }
 </style>
+
+<!-- TODO Aller au top de la page on mounted -->
+<!-- TODO styles print -->
+<!-- TODO remplacer par une firebase couplé a strapi -->
+<!-- TODO pouvoir parser des liens dans le texte -->

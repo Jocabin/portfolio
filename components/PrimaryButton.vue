@@ -1,26 +1,8 @@
 <template>
-  <a
-    v-if="props.external"
-    class="primary-btn"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span><slot>Bouton externe</slot></span>
-  </a>
-
-  <NuxtLink v-else class="primary-btn">
+  <NuxtLink class="primary-btn">
     <span><slot>Bouton interne</slot></span>
   </NuxtLink>
 </template>
-
-<script setup>
-const props = defineProps({
-  external: {
-    type: Boolean,
-    required: false,
-  },
-});
-</script>
 
 <style lang="scss" scoped>
 .primary-btn {
