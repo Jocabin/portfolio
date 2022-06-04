@@ -11,6 +11,9 @@
 </template>
 
 <script setup>
+useHead({
+  title: "Plan du site",
+});
 const sitemap = ref([
   {
     title: "Accueil",
@@ -38,7 +41,7 @@ const sitemap = ref([
 <style lang="scss" scoped>
 .plan {
   width: min(80%, 345px);
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;

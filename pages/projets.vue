@@ -70,5 +70,3 @@ const projectList = ref([
   },
 ]);
 </script>
-
-<style lang="scss" scoped></style>
