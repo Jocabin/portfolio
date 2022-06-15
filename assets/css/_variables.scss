@@ -20,14 +20,10 @@ $border: 0.25rem solid $white;
 @font-face {
   font-family: font_regular;
   src: url("../fonts/font_regular.otf");
-}
-@font-face {
-  font-family: font_light;
-  src: url("../fonts/font_light.otf");
+  font-display: swap;
 }
 @font-face {
   font-family: font_bold;
   src: url("../fonts/font_bold.otf");
+  font-display: swap;
 }
-
-// Shadows
