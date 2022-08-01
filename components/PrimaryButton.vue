@@ -1,6 +1,8 @@
 <template>
   <NuxtLink class="primary-btn">
-    <span><slot>Bouton interne</slot></span>
+    <span>
+      <slot>Bouton interne</slot>
+    </span>
   </NuxtLink>
 </template>
 
@@ -30,6 +32,7 @@
   }
 
   @media (hover: hover) {
+
     &:hover,
     &:focus {
       span {

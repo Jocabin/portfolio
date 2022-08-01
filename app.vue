@@ -113,7 +113,4 @@ useHead({
 
 <!-- TODO Aller au top de la page on mounted -->
 <!-- TODO styles print -->
-<!-- TODO remplacer par une firebase couplé a strapi -->
-<!-- TODO pouvoir parser des liens dans le texte -->
-<!-- TODO Animation translate au loading -->
 <!-- TODO Contact sitemap -->

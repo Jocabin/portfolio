@@ -5,7 +5,8 @@
   </NuxtLink>
 </template>
 
-<script setup></script>
+<script setup>
+</script>
 
 <style lang="scss" scoped>
 .goback-link,
@@ -26,6 +27,7 @@
   }
 
   @media (hover: hover) {
+
     &:hover,
     &:focus {
       background-color: $gray;
